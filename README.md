@@ -3,11 +3,11 @@ A small library that converts CSV to JSON faster
 
 ## Installation
 
-  `npm install csvtojson`
+  `npm install superparser`
 
 ## Usage
 
-    var convert = require('csvtojson');
+    var convert = require('superparser');
 
     var result=convert.csvstring(" john,jack,joe \n 1,2,3 \n 4,5,6");
   

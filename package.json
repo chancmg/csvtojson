@@ -1,5 +1,5 @@
 {
-  "name": "csvtojson",
+  "name": "superparser",
   "version": "1.0.0",
   "description": "csvtojson parser",
   "main": "index.js",
