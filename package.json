@@ -4,14 +4,14 @@
   "description": "csvtojson parser",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter nyan"
   },
   "author": "Chandrasekar <chancmg007@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.4.1"
-  }
+  },
   "repository": {
   "type": "git",
   "url": "git@github.com:chancmg/csvtojson.git"
