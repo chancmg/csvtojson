@@ -1,28 +1,26 @@
-module.exports.csvstring=function(csv){
- var lines=csv.split("\n");
+module.exports.csvstring =
+    function(csv) {
+    var lines = csv.split("\n");
 
-  var result = [];
+    var result = [];
 
-  var headers=lines[0].split(",");
+    var headers = lines[0].split(",");
 
-  for(var i=1;i<lines.length;i++){
+    for(var i = 1; i < lines.length; i++) {
 
-	  var obj = {};
-	  var currentline=lines[i].split(",");
+        var obj = {};
+        var currentline = lines[i].split(",");
 
-	  for(var j=0;j<headers.length;j++){
-		  obj[headers[j]] = currentline[j];
-	  }
+        for(var j = 0; j < headers.length; j++) {
+            obj[headers[j]] = currentline[j];
+        }
 
-	  result.push(obj);
+        result.push(obj);
+    }
 
-  }
-  
-  
-  return JSON.stringify(result); //JSON
+    return JSON.stringify(result); // JSON
 }
 
-module.exports.log=function(s)
-{
+    module.exports.log = function(s) {
     console.log(s);
 }
