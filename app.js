@@ -1,5 +1,5 @@
 var ct = require('./index.js');
-var csv = " john,jack,joe \n 1,2,3 \n 4,5,6"
+var csv = " empno,name,age \n 1,chan,24 \n 2,ganesh,24"
 
-          ct.log("hi");
+         
 console.log(ct.csvstring(csv));

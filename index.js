@@ -21,6 +21,4 @@ module.exports.csvstring =
     return JSON.stringify(result); // JSON
 }
 
-    module.exports.log = function(s) {
-    console.log(s);
-}
+   
