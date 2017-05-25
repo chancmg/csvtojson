@@ -1,10 +1,13 @@
 module.exports.csvstring =
     function(csv) {
+        
     var lines = csv.split("\n");
 
     var result = [];
 
     var headers = lines[0].split(",");
+    
+    console.log(lines.length);
 
     for(var i = 1; i < lines.length; i++) {
 
@@ -17,7 +20,7 @@ module.exports.csvstring =
 
         result.push(obj);
     }
-
+    
     return JSON.stringify(result); // JSON
 }
 
